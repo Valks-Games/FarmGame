@@ -1,9 +1,12 @@
 ﻿namespace FarmGame;
 
-public class Story
+public partial class Story
 {
     int targetIndex = 0;
+    int stateIndex = 0;
+    State currentState;
 
+    readonly List<State> states = new();
     readonly List<float> targetProgresses = new();
     readonly List<Story> stories;
     readonly PathFollow2D pathFollow;
@@ -43,26 +46,20 @@ public class Story
     {
         stories.Add(this);
         pathFollow.ProgressRatio = 0;
+        currentState = states[0];
+        currentState.Enter();
         return this;
     }
 
     public void Update()
     {
-        float speed = 2.0f;
+        currentState.Update();
+    }
 
-        if (pathFollow.Progress <= targetProgresses[targetIndex] - speed)
-        {
-            // Move the npc along the path
-            pathFollow.Progress += speed;
-        }
-        else
-        {
-            // The npc reached a path target
-            targetIndex++;
-
-            if (ReachedLastTarget())
-                stories.Remove(this);
-        }
+    public Story Wait(double delay)
+    {
+        states.Add(Idle(delay));
+        return this;
     }
 
     public Story MoveTo(int x, int y)
@@ -78,9 +75,23 @@ public class Story
         pathFollow.ProgressRatio = 1;
         targetProgresses.Add(pathFollow.Progress);
 
+        states.Add(Move());
         return this;
     }
 
     bool ReachedLastTarget() => 
         targetIndex > curve.PointCount - 1;
+
+    void SwitchToNextState()
+    {
+        if (stateIndex + 1 >= states.Count)
+        {
+            stories.Remove(this);
+            return;    
+        }
+
+        currentState.Exit();
+        currentState = states[++stateIndex];
+        currentState.Enter();
+    }
 }

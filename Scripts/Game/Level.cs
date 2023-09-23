@@ -11,6 +11,7 @@ public partial class Level : Node
         new Story(this, npc, stories)
             .MoveTo(0, 0)
             .MoveTo(3, 0)
+            .Wait(3)
             .MoveTo(3, 3)
             .MoveTo(0, 3)
             .MoveTo(0, 0)
