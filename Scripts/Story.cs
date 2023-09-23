@@ -1,19 +1,19 @@
 ﻿namespace FarmGame;
 
-public class Route
+public class Story
 {
     int targetIndex = 0;
 
     readonly List<float> targetProgresses = new();
-    readonly List<Route> routes;
+    readonly List<Story> stories;
     readonly PathFollow2D pathFollow;
     readonly Curve2D curve;
     readonly Node parent;
 
-    public Route(Node parent, Sprite2D npc, List<Route> routes)
+    public Story(Node parent, Sprite2D npc, List<Story> stories)
     {
         this.parent = parent;
-        this.routes = routes;
+        this.stories = stories;
 
         // Create the path
         curve = new Curve2D();
@@ -39,9 +39,9 @@ public class Route
         npc.Position = Vector2.Zero;
     }
 
-    public Route Start()
+    public Story Start()
     {
-        routes.Add(this);
+        stories.Add(this);
         pathFollow.ProgressRatio = 0;
         return this;
     }
@@ -61,11 +61,11 @@ public class Route
             targetIndex++;
 
             if (ReachedLastTarget())
-                routes.Remove(this);
+                stories.Remove(this);
         }
     }
 
-    public Route MoveTo(int x, int y)
+    public Story MoveTo(int x, int y)
     {
         // Calculate the grid point
         Vector2 gridPos = Utils.GetGridPosition(x, y);

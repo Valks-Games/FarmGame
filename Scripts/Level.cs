@@ -2,13 +2,13 @@ namespace FarmGame;
 
 public partial class Level : Node
 {
-    readonly List<Route> routes = new();
+    readonly List<Story> stories = new();
 
     public override void _Ready()
     {
         Sprite2D npc = CreateNPC(Colors.Red);
 
-        new Route(this, npc, routes)
+        new Story(this, npc, stories)
             .MoveTo(0, 0)
             .MoveTo(3, 0)
             .MoveTo(3, 3)
@@ -19,9 +19,9 @@ public partial class Level : Node
 
     public override void _PhysicsProcess(double delta)
     {
-        for (int i = 0; i < routes.Count; i++)
+        for (int i = 0; i < stories.Count; i++)
         {
-            routes[i].Update();
+            stories[i].Update();
         }
     }
 
