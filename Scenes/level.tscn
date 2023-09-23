@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://bb1jq6jom6qlh"]
+
+[ext_resource type="Script" path="res://Scripts/Level.cs" id="1_ybmgw"]
+[ext_resource type="Texture2D" uid="uid://cfnod375r7tsw" path="res://Art/Shiny1.png" id="2_a2yux"]
+[ext_resource type="Script" path="res://Scripts/Time.cs" id="2_kc260"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ct48a"]
+texture = ExtResource("2_a2yux")
+texture_region_size = Vector2i(48, 48)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_5gxso"]
+tile_size = Vector2i(48, 48)
+sources/0 = SubResource("TileSetAtlasSource_ct48a")
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_ybmgw")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(119, 99)
+zoom = Vector2(2, 2)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_5gxso")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 393216, 0, 65536, 0, 0, 131072, 0, 0, 196608, 0, 0, 3, 0, 0, 2, 0, 0, 1, 0, 0, 65537, 0, 0, 131073, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 131075, 0, 0, 65539, 0, 0, 65538, 0, 0, 131074, 0, 0, 65535, 393216, 0, -1, 393216, 0, -65536, 393216, 0)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Time" type="Label" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+text = "0:00"
+script = ExtResource("2_kc260")
