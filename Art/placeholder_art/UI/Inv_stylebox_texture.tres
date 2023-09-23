@@ -1,0 +1,6 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://88wnob2uovvu"]
+
+[ext_resource type="Texture2D" uid="uid://cewgwmfltu27i" path="res://Art/placeholder_art/UI/InvBarIcon.png" id="1_df1jb"]
+
+[resource]
+texture = ExtResource("1_df1jb")

@@ -1,0 +1,156 @@
+[gd_scene load_steps=13 format=3 uid="uid://bqpjr4n8iqi6a"]
+
+[ext_resource type="Texture2D" uid="uid://bng5dpjukimoc" path="res://Art/placeholder_art/UI/Coin.png" id="1_r7sye"]
+[ext_resource type="FontFile" uid="uid://fbeoeb2o2lhj" path="res://Fonts/OpenSansReg.tres" id="2_ssbdh"]
+[ext_resource type="Texture2D" uid="uid://cxdt1xc6qabkw" path="res://Art/placeholder_art/UI/ProgressBarTextureOverlayBar.png" id="3_spanf"]
+[ext_resource type="Texture2D" uid="uid://cfkqavewciy8n" path="res://Art/placeholder_art/UI/ProgressBarTexture.png" id="4_xgus6"]
+[ext_resource type="Texture2D" uid="uid://bfp4xanmtodsx" path="res://Art/placeholder_art/UI/HealthBarOverlay__Empty.png" id="5_f06ho"]
+[ext_resource type="Texture2D" uid="uid://dpit2xigg6maq" path="res://Art/placeholder_art/UI/HealthBarOverlay__Full.png" id="6_s7ax5"]
+[ext_resource type="Texture2D" uid="uid://tqqt8pnnc5r0" path="res://Art/placeholder_art/UI/BagIcon.png" id="7_jvcrq"]
+[ext_resource type="Texture2D" uid="uid://bbilb7xm0m0h3" path="res://Art/placeholder_art/UI/MenuIcon.png" id="8_usut0"]
+[ext_resource type="StyleBox" uid="uid://88wnob2uovvu" path="res://Art/placeholder_art/UI/Inv_stylebox_texture.tres" id="9_eckn8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g4ty5"]
+font = ExtResource("2_ssbdh")
+font_size = 25
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0nyjk"]
+texture = ExtResource("7_jvcrq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_twe7b"]
+texture = ExtResource("8_usut0")
+
+[node name="Main_UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRct_Currency" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = -1.0
+offset_right = 64.0
+offset_bottom = 63.0
+tooltip_text = "Currency"
+texture = ExtResource("1_r7sye")
+
+[node name="Label_Currency" type="Label" parent="."]
+layout_mode = 0
+offset_left = 57.0
+offset_right = 126.0
+offset_bottom = 64.0
+text = "1000"
+label_settings = SubResource("LabelSettings_g4ty5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TexturePrgBar_Energy" type="TextureProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -55.0
+offset_top = -103.0
+offset_right = -5.0
+offset_bottom = -4.0
+grow_horizontal = 0
+grow_vertical = 0
+tooltip_text = "Energy"
+value = 90.0
+rounded = true
+fill_mode = 3
+texture_over = ExtResource("3_spanf")
+texture_progress = ExtResource("4_xgus6")
+radial_fill_degrees = 180.0
+
+[node name="TexturePrgBar_Health" type="TextureProgressBar" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 466.0
+offset_top = 356.0
+offset_right = 666.0
+offset_bottom = 406.0
+value = 100.0
+texture_under = ExtResource("5_f06ho")
+texture_progress = ExtResource("6_s7ax5")
+radial_fill_degrees = 180.0
+
+[node name="GridCont_Hotbar" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -270.0
+offset_top = -70.0
+offset_right = 270.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 0
+columns = 8
+
+[node name="Panel" type="Panel" parent="GridCont_Hotbar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("9_eckn8")
+
+[node name="Panel2" type="Panel" parent="GridCont_Hotbar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("9_eckn8")
+
+[node name="Panel3" type="Panel" parent="GridCont_Hotbar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("9_eckn8")
+
+[node name="Panel4" type="Panel" parent="GridCont_Hotbar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("9_eckn8")
+
+[node name="Panel5" type="Panel" parent="GridCont_Hotbar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("9_eckn8")
+
+[node name="Panel6" type="Panel" parent="GridCont_Hotbar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("9_eckn8")
+
+[node name="Panel7" type="Panel" parent="GridCont_Hotbar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("9_eckn8")
+
+[node name="Panel8" type="Panel" parent="GridCont_Hotbar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("9_eckn8")
+
+[node name="GridCont_Menubar" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = -137.0
+offset_right = 68.0
+offset_bottom = -5.0
+grow_vertical = 0
+
+[node name="Panel" type="Panel" parent="GridCont_Menubar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_0nyjk")
+
+[node name="Panel2" type="Panel" parent="GridCont_Menubar"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_twe7b")
