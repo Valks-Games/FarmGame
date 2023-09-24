@@ -1,14 +1,14 @@
 [gd_scene load_steps=13 format=3 uid="uid://bqpjr4n8iqi6a"]
 
-[ext_resource type="Texture2D" uid="uid://bng5dpjukimoc" path="res://Art/placeholder_art/UI/Coin.png" id="1_r7sye"]
+[ext_resource type="Texture2D" uid="uid://bng5dpjukimoc" path="res://Art/UI/Coin.png" id="1_r7sye"]
 [ext_resource type="FontFile" uid="uid://fbeoeb2o2lhj" path="res://Fonts/OpenSansReg.tres" id="2_ssbdh"]
-[ext_resource type="Texture2D" uid="uid://cxdt1xc6qabkw" path="res://Art/placeholder_art/UI/ProgressBarTextureOverlayBar.png" id="3_spanf"]
-[ext_resource type="Texture2D" uid="uid://cfkqavewciy8n" path="res://Art/placeholder_art/UI/ProgressBarTexture.png" id="4_xgus6"]
-[ext_resource type="Texture2D" uid="uid://bfp4xanmtodsx" path="res://Art/placeholder_art/UI/HealthBarOverlay__Empty.png" id="5_f06ho"]
-[ext_resource type="Texture2D" uid="uid://dpit2xigg6maq" path="res://Art/placeholder_art/UI/HealthBarOverlay__Full.png" id="6_s7ax5"]
-[ext_resource type="Texture2D" uid="uid://tqqt8pnnc5r0" path="res://Art/placeholder_art/UI/BagIcon.png" id="7_jvcrq"]
-[ext_resource type="Texture2D" uid="uid://bbilb7xm0m0h3" path="res://Art/placeholder_art/UI/MenuIcon.png" id="8_usut0"]
-[ext_resource type="StyleBox" uid="uid://88wnob2uovvu" path="res://Art/placeholder_art/UI/Inv_stylebox_texture.tres" id="9_eckn8"]
+[ext_resource type="Texture2D" uid="uid://cxdt1xc6qabkw" path="res://Art/UI/ProgressBarTextureOverlayBar.png" id="3_spanf"]
+[ext_resource type="Texture2D" uid="uid://cfkqavewciy8n" path="res://Art/UI/ProgressBarTexture.png" id="4_xgus6"]
+[ext_resource type="Texture2D" uid="uid://bfp4xanmtodsx" path="res://Art/UI/HealthBarOverlay__Empty.png" id="5_f06ho"]
+[ext_resource type="Texture2D" uid="uid://dpit2xigg6maq" path="res://Art/UI/HealthBarOverlay__Full.png" id="6_s7ax5"]
+[ext_resource type="Texture2D" uid="uid://tqqt8pnnc5r0" path="res://Art/UI/BagIcon.png" id="7_jvcrq"]
+[ext_resource type="Texture2D" uid="uid://bbilb7xm0m0h3" path="res://Art/UI/MenuIcon.png" id="8_usut0"]
+[ext_resource type="StyleBox" uid="uid://88wnob2uovvu" path="res://Art/UI/Inv_stylebox_texture.tres" id="9_eckn8"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_g4ty5"]
 font = ExtResource("2_ssbdh")

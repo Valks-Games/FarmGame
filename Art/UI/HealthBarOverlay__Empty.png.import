@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbilb7xm0m0h3"
-path="res://.godot/imported/MenuIcon.png-e571b723e3a33477b42dfceabf6b5032.ctex"
+uid="uid://bfp4xanmtodsx"
+path="res://.godot/imported/HealthBarOverlay__Empty.png-4f5f7f02391bdfc57204bdd595a473e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/placeholder_art/UI/MenuIcon.png"
-dest_files=["res://.godot/imported/MenuIcon.png-e571b723e3a33477b42dfceabf6b5032.ctex"]
+source_file="res://Art/UI/HealthBarOverlay__Empty.png"
+dest_files=["res://.godot/imported/HealthBarOverlay__Empty.png-4f5f7f02391bdfc57204bdd595a473e6.ctex"]
 
 [params]
 

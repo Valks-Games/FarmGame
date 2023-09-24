@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpit2xigg6maq"
-path="res://.godot/imported/HealthBarOverlay__Full.png-d2ef06fe192e5037861e60327606ce99.ctex"
+uid="uid://bng5dpjukimoc"
+path="res://.godot/imported/Coin.png-c73704369748315c7605168cf2f9a538.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/placeholder_art/UI/HealthBarOverlay__Full.png"
-dest_files=["res://.godot/imported/HealthBarOverlay__Full.png-d2ef06fe192e5037861e60327606ce99.ctex"]
+source_file="res://Art/UI/Coin.png"
+dest_files=["res://.godot/imported/Coin.png-c73704369748315c7605168cf2f9a538.ctex"]
 
 [params]
 

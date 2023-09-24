@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbtoclgdljhk1"
-path="res://.godot/imported/LevelBckGrd.png-df7ca7bef3644f4353a432f460a1fa29.ctex"
+uid="uid://cfnod375r7tsw"
+path="res://.godot/imported/Shiny1.png-cdf4adffe40d05f92fcbadbdbb6d6017.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/placeholder_art/World/LevelBckGrd.png"
-dest_files=["res://.godot/imported/LevelBckGrd.png-df7ca7bef3644f4353a432f460a1fa29.ctex"]
+source_file="res://Art/Debug/Shiny1.png"
+dest_files=["res://.godot/imported/Shiny1.png-cdf4adffe40d05f92fcbadbdbb6d6017.ctex"]
 
 [params]
 

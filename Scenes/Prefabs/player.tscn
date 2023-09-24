@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://b3y71as2bj57k"]
 
-[ext_resource type="Script" path="res://Scripts/Player.cs" id="1_ddhgy"]
+[ext_resource type="Script" path="res://Scripts/Game/Player.cs" id="1_bncgg"]
 [ext_resource type="Texture2D" uid="uid://civ71no2k58v7" path="res://Art/icon.svg" id="2_0u7ea"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_744bh"]
 size = Vector2(128, 128)
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_ddhgy")
+script = ExtResource("1_bncgg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_0u7ea")

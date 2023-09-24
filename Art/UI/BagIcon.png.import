@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfnod375r7tsw"
-path="res://.godot/imported/Shiny1.png-6a336538ad70bd70a66255a0843f2ac8.ctex"
+uid="uid://tqqt8pnnc5r0"
+path="res://.godot/imported/BagIcon.png-1d59e5e4cf0e5baa02e849690f53ce63.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Shiny1.png"
-dest_files=["res://.godot/imported/Shiny1.png-6a336538ad70bd70a66255a0843f2ac8.ctex"]
+source_file="res://Art/UI/BagIcon.png"
+dest_files=["res://.godot/imported/BagIcon.png-1d59e5e4cf0e5baa02e849690f53ce63.ctex"]
 
 [params]
 
