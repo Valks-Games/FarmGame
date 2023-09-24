@@ -4,3 +4,6 @@
 # Mono Specific Ignores
 .vs/
 Properties/
+
+# vscode configurations
+.vscode/
