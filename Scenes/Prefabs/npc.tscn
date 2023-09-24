@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://brv2cchfmpj4k"]
+
+[ext_resource type="Texture2D" uid="uid://civ71no2k58v7" path="res://Art/icon.svg" id="1_i248j"]
+
+[node name="NPC" type="Sprite2D"]
+self_modulate = Color(0.0823529, 1, 0, 1)
+z_index = 1
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_i248j")

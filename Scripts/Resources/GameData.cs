@@ -2,5 +2,5 @@
 
 public partial class GameData : Resource
 {
-    //[Export] public int Health;
+    [Export] public string Time;
 }

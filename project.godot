@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Farm Game"
-run/main_scene="res://main.tscn"
+run/main_scene="res://Scenes/level.tscn"
 config/features=PackedStringArray("4.1", "C#", "Forward Plus")
 config/icon="res://Art/icon.svg"
 
@@ -22,6 +22,10 @@ Global="*res://Scripts/Autoloads/Global.cs"
 [dotnet]
 
 project/assembly_name="Farm Game"
+
+[filesystem]
+
+import/blender/enabled=false
 
 [input]
 
