@@ -20,7 +20,7 @@ texture = ExtResource("7_jvcrq")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_twe7b"]
 texture = ExtResource("8_usut0")
 
-[node name="Main_UI" type="Control"]
+[node name="Main UI" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,7 +28,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRct_Currency" type="TextureRect" parent="."]
+[node name="Currency Image" type="TextureRect" parent="."]
 layout_mode = 0
 offset_top = -1.0
 offset_right = 64.0
@@ -36,7 +36,7 @@ offset_bottom = 63.0
 tooltip_text = "Currency"
 texture = ExtResource("1_r7sye")
 
-[node name="Label_Currency" type="Label" parent="."]
+[node name="Currency" type="Label" parent="."]
 layout_mode = 0
 offset_left = 57.0
 offset_right = 126.0
@@ -46,7 +46,7 @@ label_settings = SubResource("LabelSettings_g4ty5")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TexturePrgBar_Energy" type="TextureProgressBar" parent="."]
+[node name="Energy" type="TextureProgressBar" parent="."]
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -67,7 +67,7 @@ texture_over = ExtResource("3_spanf")
 texture_progress = ExtResource("4_xgus6")
 radial_fill_degrees = 180.0
 
-[node name="TexturePrgBar_Health" type="TextureProgressBar" parent="."]
+[node name="Health" type="TextureProgressBar" parent="."]
 visible = false
 layout_mode = 0
 offset_left = 466.0
@@ -79,7 +79,7 @@ texture_under = ExtResource("5_f06ho")
 texture_progress = ExtResource("6_s7ax5")
 radial_fill_degrees = 180.0
 
-[node name="GridCont_Hotbar" type="GridContainer" parent="."]
+[node name="Hotbar" type="GridContainer" parent="."]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -94,47 +94,47 @@ grow_horizontal = 2
 grow_vertical = 0
 columns = 8
 
-[node name="Panel" type="Panel" parent="GridCont_Hotbar"]
+[node name="Panel" type="Panel" parent="Hotbar"]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = ExtResource("9_eckn8")
 
-[node name="Panel2" type="Panel" parent="GridCont_Hotbar"]
+[node name="Panel2" type="Panel" parent="Hotbar"]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = ExtResource("9_eckn8")
 
-[node name="Panel3" type="Panel" parent="GridCont_Hotbar"]
+[node name="Panel3" type="Panel" parent="Hotbar"]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = ExtResource("9_eckn8")
 
-[node name="Panel4" type="Panel" parent="GridCont_Hotbar"]
+[node name="Panel4" type="Panel" parent="Hotbar"]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = ExtResource("9_eckn8")
 
-[node name="Panel5" type="Panel" parent="GridCont_Hotbar"]
+[node name="Panel5" type="Panel" parent="Hotbar"]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = ExtResource("9_eckn8")
 
-[node name="Panel6" type="Panel" parent="GridCont_Hotbar"]
+[node name="Panel6" type="Panel" parent="Hotbar"]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = ExtResource("9_eckn8")
 
-[node name="Panel7" type="Panel" parent="GridCont_Hotbar"]
+[node name="Panel7" type="Panel" parent="Hotbar"]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = ExtResource("9_eckn8")
 
-[node name="Panel8" type="Panel" parent="GridCont_Hotbar"]
+[node name="Panel8" type="Panel" parent="Hotbar"]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = ExtResource("9_eckn8")
 
-[node name="GridCont_Menubar" type="GridContainer" parent="."]
+[node name="Menubar" type="GridContainer" parent="."]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
@@ -145,12 +145,12 @@ offset_right = 68.0
 offset_bottom = -5.0
 grow_vertical = 0
 
-[node name="Panel" type="Panel" parent="GridCont_Menubar"]
+[node name="Panel" type="Panel" parent="Menubar"]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_0nyjk")
 
-[node name="Panel2" type="Panel" parent="GridCont_Menubar"]
+[node name="Panel2" type="Panel" parent="Menubar"]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_twe7b")

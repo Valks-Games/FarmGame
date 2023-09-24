@@ -2,7 +2,7 @@ namespace FarmGame;
 
 public partial class Player : CharacterBody2D
 {
-	float speed = 25;
+	float speed = 100;
 	float friction = 0.15f;
 
 	public override void _PhysicsProcess(double delta)
