@@ -1,6 +1,3 @@
-using Godot;
-using System;
-
 public partial class TileState : Node
 {
     public bool IsWatered { get; private set;} = false;

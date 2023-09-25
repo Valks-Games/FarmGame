@@ -1,6 +1,3 @@
-using Godot;
-using System;
-
 public partial class Seasons : Node
 {
     public enum Season
