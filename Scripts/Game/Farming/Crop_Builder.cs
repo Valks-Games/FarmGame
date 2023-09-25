@@ -7,8 +7,8 @@ public partial class Crop_Builder : Node
 
     public readonly List <Crop> Crops;
 
-	public override void _Ready()
-	{
+    public override void _Ready()
+    {
         Crops.Add(new Crop("Test", "TestDesc", 1,1,1, Seasons.Season.Spring));
-	}
+    }
 }
