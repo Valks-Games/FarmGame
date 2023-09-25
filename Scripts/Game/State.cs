@@ -14,5 +14,8 @@ public class State
         this.name = name;
     }
 
-    public override string ToString() => name;
+    public override string ToString()
+    {
+        return name;
+    }
 }

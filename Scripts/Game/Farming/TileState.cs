@@ -2,11 +2,11 @@ namespace FarmGame;
 
 public partial class TileState : Node
 {
-    public bool IsWatered { get; private set;} = false;
-    public bool IsTilled { get; private set;} = false;
-    public bool IsSeeded { get; private set;} = false;
-    public int DaysSinceStateChange { get; private set;} = 0;
-    public int GrowthStage { get; private set;} = 0;
+    public bool IsWatered { get; private set; } = false;
+    public bool IsTilled { get; private set; } = false;
+    public bool IsSeeded { get; private set; } = false;
+    public int DaysSinceStateChange { get; private set; } = 0;
+    public int GrowthStage { get; private set; } = 0;
 
     public void SetWaterStatus(bool _isWatered)
     {
@@ -19,7 +19,7 @@ public partial class TileState : Node
 
     public void SetSeedStatus(bool _isSeeded)
     {
-        if  (IsTilled == true & _isSeeded == true)
+        if (IsTilled == true & _isSeeded == true)
         {
             IsSeeded = _isSeeded;
             DaysSinceStateChange = 0;

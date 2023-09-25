@@ -30,7 +30,7 @@ public partial class Level : Node
     {
         Sprite2D npc = GD.Load<PackedScene>("res://Scenes/Prefabs/npc.tscn")
             .Instantiate<Sprite2D>();
-        
+
         npc.SelfModulate = color;
         npc.Position = Utils.GetGridPosition(0, 0);
         AddChild(npc);

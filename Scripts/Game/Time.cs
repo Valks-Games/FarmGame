@@ -31,18 +31,20 @@ public partial class Time : Label
     {
         UpdateTime(delta);
     }
-    
+
     void UpdateTime(double delta)
     {
         gameTime = gameTime.AddSeconds(delta * TIME_MULTIPLIER);
 
-        Text = 
+        Text =
             $"{GetAbbreviatedMonth(gameTime.Month)}, " +
             $"Day {gameTime.Day:00}, {gameTime.Hour:00}:{gameTime.Minute:00}";
     }
 
-    static string GetAbbreviatedMonth(int month) => 
-        CultureInfo.CurrentCulture.DateTimeFormat
+    static string GetAbbreviatedMonth(int month)
+    {
+        return CultureInfo.CurrentCulture.DateTimeFormat
             .GetAbbreviatedMonthName(month)
             .Replace(".", "");
+    }
 }

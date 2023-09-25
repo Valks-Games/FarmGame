@@ -2,7 +2,7 @@ namespace FarmGame;
 
 public partial class TileState_Manager : Node
 {
-    TileState TileState = new TileState();
+    TileState TileState = new();
     Crop Crop;
 
     // Called when the node enters the scene tree for the first time.
@@ -23,7 +23,7 @@ public partial class TileState_Manager : Node
         if (true)
         {
             TileState.SetWaterStatus(false);
-            throw new NotImplementedException();    
+            throw new NotImplementedException();
         }
     }
 
@@ -33,7 +33,7 @@ public partial class TileState_Manager : Node
         if (true)
         {
             TileState.IncreaseGrowthStage();
-            throw new NotImplementedException();    
+            throw new NotImplementedException();
         }
     }
 
@@ -43,16 +43,16 @@ public partial class TileState_Manager : Node
         if (true)
         {
             TileState.ResetTileToDefaultState();
-            throw new NotImplementedException();    
+            throw new NotImplementedException();
         }
     }
 
-        public void AddCrop()
+    public void AddCrop()
     {
         if (TileState.IsTilled)
         {
             TileState.SetSeedStatus(true);
-            throw new NotImplementedException();    
+            throw new NotImplementedException();
         }
     }
 }

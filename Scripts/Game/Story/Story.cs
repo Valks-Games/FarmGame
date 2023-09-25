@@ -79,15 +79,17 @@ public partial class Story
         return this;
     }
 
-    bool ReachedLastTarget() => 
-        targetIndex > curve.PointCount - 1;
+    bool ReachedLastTarget()
+    {
+        return targetIndex > curve.PointCount - 1;
+    }
 
     void SwitchToNextState()
     {
         if (stateIndex + 1 >= states.Count)
         {
             stories.Remove(this);
-            return;    
+            return;
         }
 
         currentState.Exit();
