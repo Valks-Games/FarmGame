@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://brlqs46chm4n1"]
+[gd_scene load_steps=6 format=3 uid="uid://brlqs46chm4n1"]
 
+[ext_resource type="Resource" uid="uid://cenil3xjwpm4k" path="res://Resources/game_state.tres" id="2_ttbjc"]
 [ext_resource type="PackedScene" uid="uid://b3y71as2bj57k" path="res://Scenes/Prefabs/player.tscn" id="2_yot55"]
 [ext_resource type="PackedScene" uid="uid://bqpjr4n8iqi6a" path="res://Scenes/Prefabs/UI/main_ui.tscn" id="3_e351q"]
 [ext_resource type="TileSet" uid="uid://bsh11b1mat78g" path="res://Art/World/Placeholder_TileSet.tres" id="4_32kka"]
@@ -17,6 +18,7 @@ texture = SubResource("CompressedTexture2D_auyey")
 [node name="Player" parent="." instance=ExtResource("2_yot55")]
 position = Vector2(577, 323)
 scale = Vector2(1.5, 1.5)
+gameState = ExtResource("2_ttbjc")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

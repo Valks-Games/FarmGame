@@ -1,0 +1,6 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cenil3xjwpm4k"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/GameState.cs" id="1_kfhfv"]
+
+[resource]
+script = ExtResource("1_kfhfv")

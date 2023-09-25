@@ -2,8 +2,15 @@ namespace FarmGame;
 
 public partial class Player : CharacterBody2D
 {
+    [Export] GameState gameState;
+
     float speed = 100;
     float friction = 0.15f;
+
+    public override void _Ready()
+    {
+        GD.Print(gameState.Test);
+    }
 
     public override void _PhysicsProcess(double delta)
     {
