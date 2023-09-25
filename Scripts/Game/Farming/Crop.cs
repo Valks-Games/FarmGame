@@ -9,14 +9,14 @@ public partial class Crop : Node
     public int DaysUntilDeath  { get; private set;}
     public Seasons.Season GrowthSeason  { get; private set;}
 
-    public Crop(string _CropName, string _CropDescription, int _DaysUntilMaxGrowth, 
-                int _CropYield, int _DaysUntilDeath, Seasons.Season _GrowthSeason)
+    public Crop(string _cropName, string _cropDescription, int _daysUntilMaxGrowth, 
+                int _cropYield, int _daysUntilDeath, Seasons.Season _growthSeason)
     {
-        CropName = _CropName;
-        CropDescription = _CropDescription;
-        DaysUntilMaxGrowth = _DaysUntilMaxGrowth;
-        CropYield = _CropYield;
-        DaysUntilDeath = _DaysUntilDeath;
-        GrowthSeason = _GrowthSeason;
+        CropName = _cropName;
+        CropDescription = _cropDescription;
+        DaysUntilMaxGrowth = _daysUntilMaxGrowth;
+        CropYield = _cropYield;
+        DaysUntilDeath = _daysUntilDeath;
+        GrowthSeason = _growthSeason;
     }
 }
