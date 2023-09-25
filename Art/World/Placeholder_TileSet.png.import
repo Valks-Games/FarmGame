@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbtoclgdljhk1"
-path="res://.godot/imported/LevelBckGrd.png-6475a1678703ca0112f93598552b6203.ctex"
+uid="uid://cpf45b8nbxc6t"
+path="res://.godot/imported/Placeholder_TileSet.png-e16ee2b57e3bc608280803015b57cd77.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/World/LevelBckGrd.png"
-dest_files=["res://.godot/imported/LevelBckGrd.png-6475a1678703ca0112f93598552b6203.ctex"]
+source_file="res://Art/World/Placeholder_TileSet.png"
+dest_files=["res://.godot/imported/Placeholder_TileSet.png-e16ee2b57e3bc608280803015b57cd77.ctex"]
 
 [params]
 
