@@ -1,3 +1,5 @@
+namespace FarmGame;
+
 public partial class TileState_Manager : Node
 {
     TileState TileState = new TileState();

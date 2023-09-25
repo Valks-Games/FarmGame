@@ -1,3 +1,5 @@
+namespace FarmGame;
+
 public partial class Seasons : Node
 {
     public enum Season

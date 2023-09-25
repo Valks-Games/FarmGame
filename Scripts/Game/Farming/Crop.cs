@@ -1,3 +1,5 @@
+namespace FarmGame;
+
 public partial class Crop : Node
 {
     public string CropName  { get; private set;}

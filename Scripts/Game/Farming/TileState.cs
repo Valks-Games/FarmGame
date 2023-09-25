@@ -1,3 +1,5 @@
+namespace FarmGame;
+
 public partial class TileState : Node
 {
     public bool IsWatered { get; private set;} = false;

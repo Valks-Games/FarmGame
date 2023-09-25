@@ -1,8 +1,10 @@
+namespace FarmGame;
+
 public partial class Crop_Builder : Node
 {
     // Crop_Builder will be instantiated once at runtime to build objects for all the available crops in the game.
 
-    public readonly List <Crop> Crops;
+    public readonly List<Crop> Crops;
 
     public override void _Ready()
     {
