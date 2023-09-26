@@ -6,7 +6,8 @@ public partial class TileState : Node
     public bool IsTilled { get; private set; }
     public bool IsSeeded { get; private set; }
     public int DaysSinceStateChange { get; private set; }
-    public int GrowthStage { get; private set; }
+    public int CurrentGrowthStage { get; private set; }
+    const int MaxGrowthStage = 5;
 
     public void SetWaterStatus(bool _isWatered)
     {
@@ -19,7 +20,7 @@ public partial class TileState : Node
 
     public void SetSeedStatus(bool _isSeeded)
     {
-        if (IsTilled == true & _isSeeded == true)
+        if (IsTilled == true)
         {
             IsSeeded = _isSeeded;
             DaysSinceStateChange = 0;
@@ -37,14 +38,15 @@ public partial class TileState : Node
 
     public void IncreaseGrowthStage()
     {
-        // Plants will have 4 growth stages, the 5th stage will represent the harvested state.
-        if (GrowthStage == 5)
+        // MaxGrowthStage will be the harvested state. 
+        // MaxGrowthStage - 1 will be the crops fully grown stage.
+        if (CurrentGrowthStage == MaxGrowthStage)
         {
             ResetTileToDefaultState();
         }
-        else if (GrowthStage < 4 & IsSeeded != false)
+        else if (CurrentGrowthStage <= (MaxGrowthStage - 1) & IsSeeded == true)
         {
-            GrowthStage++;
+            CurrentGrowthStage++;
             DaysSinceStateChange = 0;
         }
     }
@@ -55,6 +57,6 @@ public partial class TileState : Node
         IsTilled = false;
         IsSeeded = false;
         DaysSinceStateChange = 0;
-        GrowthStage = 0;
+        CurrentGrowthStage = 0;
     }
 }

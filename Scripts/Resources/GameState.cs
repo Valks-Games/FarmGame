@@ -1,4 +1,4 @@
-﻿namespace FarmGame;
+namespace FarmGame;
 
 [GlobalClass]
 public partial class GameState : Resource

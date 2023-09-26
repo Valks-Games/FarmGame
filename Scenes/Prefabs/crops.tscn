@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=3 uid="uid://ixju5j3lx3dv"]
+
+[ext_resource type="Script" path="res://Scripts/Game/Farming/Crop.cs" id="2_73nnv"]
+
+[node name="Crops" type="Node"]
+
+[node name="Crop1" type="Node" parent="."]
+script = ExtResource("2_73nnv")
+CropName = "Test"
+CropDescription = "Test"
+DaysUntilMaxGrowth = 1
+CropYield = 1
+
+[node name="Crop2" type="Node" parent="."]
+script = ExtResource("2_73nnv")
+CropName = "Test"
+CropDescription = "Test"
+DaysUntilMaxGrowth = 1
+CropYield = 1
+
+[node name="Crop3" type="Node" parent="."]
+script = ExtResource("2_73nnv")
+CropName = "Test"
+CropDescription = "Test"
+DaysUntilMaxGrowth = 1
+CropYield = 1
+
+[node name="Crop4" type="Node" parent="."]
+script = ExtResource("2_73nnv")
+CropName = "Test"
+CropDescription = "Test"
+DaysUntilMaxGrowth = 1
+CropYield = 1
+
+[node name="Crop5" type="Node" parent="."]
+script = ExtResource("2_73nnv")
+CropName = "Test"
+CropDescription = "Test"
+DaysUntilMaxGrowth = 1
+CropYield = 1
+
+[node name="Crop6" type="Node" parent="."]
+script = ExtResource("2_73nnv")
+CropName = "Test"
+CropDescription = "Test"
+DaysUntilMaxGrowth = 1
+CropYield = 1
+
+[node name="Crop7" type="Node" parent="."]
+script = ExtResource("2_73nnv")
+CropName = "Test"
+CropDescription = "Test"
+DaysUntilMaxGrowth = 1
+CropYield = 1
+
+[node name="Crop8" type="Node" parent="."]
+script = ExtResource("2_73nnv")
+CropName = "Test"
+CropDescription = "Test"
+DaysUntilMaxGrowth = 1
+CropYield = 1
+
+[node name="Crop9" type="Node" parent="."]
+script = ExtResource("2_73nnv")
+CropName = "Test"
+CropDescription = "Test"
+DaysUntilMaxGrowth = 1
+CropYield = 1
+
+[node name="Crop10" type="Node" parent="."]
+script = ExtResource("2_73nnv")
+CropName = "Test"
+CropDescription = "Test"
+DaysUntilMaxGrowth = 1
+CropYield = 1
